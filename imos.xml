@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<remote name="imos-git" fetch="https://github.com/iMOS-OSS/" revision="twelve-gsi" />
+
+<project path="device/pal/imphone" name="imos_device_pal_imphone" remote="imos-git" />
+
+<remove-project name="platform/frameworks/base" />
+<project path="frameworks/base" name="imos_frameworks_base" remote="imos-git" />
+
+<remove-project name="platform/packages/apps/Settings" />
+<project path="packages/apps/Settings" name="imos_packages_apps_Settings" remote="imos-git" />
+
+</manifest>
