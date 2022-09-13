@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 <remote name="phh" fetch="https://github.com/phhusson/" />
-<remote name="fdroid" fetch="https://gitlab.com/fdroid/" />
 
 <remove-project name="platform/system/core" />
 <project path="system/core" name="platform_system_core" remote="phh" revision="android-12.1.0_r11-phh" />
@@ -60,7 +59,6 @@
 <remove-project name="platform/system/security" />
 <project path="system/security" name="platform_system_security" remote="phh" revision="android-12.1.0_r11-phh" />
 
-<project path="vendor/hardware_overlay" name="vendor_hardware_overlay" remote="phh" revision="pie" />
 <project path="vendor/vndk-tests" name="vendor_vndk-tests" remote="phh" revision="master" />
 <project path="vendor/interfaces" name="vendor_interfaces" remote="phh" revision="android-11.0" />
 <project path="vendor/lptools" name="vendor_lptools" remote="phh" revision="master" />
@@ -70,8 +68,5 @@
 <!-- exfat support -->
 <remote name="relan" fetch="https://github.com/relan/" />
 <project path="external/exfat" name="exfat" remote="relan" revision="master" />
-  
-<project path="packages/apps/FDroidPrivilegedExtension" name="privileged-extension.git" remote="fdroid" revision="refs/tags/0.2.7" />
-<project path="vendor/foss" name="vendor_foss" remote="phh" revision="master" />
 
 </manifest>

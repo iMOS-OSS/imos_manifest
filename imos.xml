@@ -3,6 +3,8 @@
 
 <remote name="imos-git" fetch="https://github.com/iMOS-OSS/" revision="twelve-gsi" />
 
+<remote name="arrow-gitlab" fetch="https://gitlab.com/arrowos-project" review="https://review.arrowos.net/" revision="refs/heads/arrow-12.1" />
+
 <project path="device/pal/imphone" name="imos_device_pal_imphone" remote="imos-git" />
 
 <remove-project name="platform/frameworks/base" />
@@ -10,5 +12,8 @@
 
 <remove-project name="platform/packages/apps/Settings" />
 <project path="packages/apps/Settings" name="imos_packages_apps_Settings" remote="imos-git" />
+
+<project path="vendor/gapps" name="android_vendor_gapps" remote="arrow-gitlab" clone-depth="1" />
+<project path="vendor/hardware_overlay" name="imos_hardware_overlay" remote="imos-git" />
 
 </manifest>
